@@ -1,3 +1,9 @@
-const numberToReversedDigits = number => {};
+const numberToReversedDigits = (number) => {
+  const arr = String(number)
+    .split("")
+    .reverse()
+    .map(Number);
+  return arr;
+};
 
 module.exports = numberToReversedDigits;
